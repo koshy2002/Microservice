@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+}
+@model ScoreClient.ViewModels.MatchViewModel;
+
+<body>
+    <div class="container">
+        <a href="@Url.Action("Index","Leaderboard")">< Back to Home</a>
+        <h2>Select Winner</h2>
+        @using (Html.BeginForm("Edit", "Leaderboard", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Match.Player, new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Model.Match.Player
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Match.OpponentName, new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Model.Match.OpponentName
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Match.Winner, new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBoxFor(Model => Model.Match.Winner, new { @class = "form-control" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary btn-lg">Select Winner</button>
+                @Html.HiddenFor(Model => Model.Match.MatchId)
+                @Html.HiddenFor(Model => Model.Match.Player)
+                @Html.HiddenFor(Model => Model.Match.OpponentName)
+            </div>
+        </div>
+
+}
+    </div>
+</body>
+

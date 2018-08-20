@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+@model ScoreClient.ViewModels.MatchViewModel;
+
+<body>
+    <div class="container">
+        <a href="@Url.Action("Index","Leaderboard")">< Back to Home</a>
+        <h2>Start Match</h2>
+        @using (Html.BeginForm("Create", "Leaderboard", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+
+
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Match.Player, new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBoxFor(Model => Model.Match.Player, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Match.Level, new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBoxFor(Model => Model.Match.Level, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Match.OpponentName, new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBoxFor(Model => Model.Match.OpponentName, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Match.OpponentLevel, new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBoxFor(Model => Model.Match.OpponentLevel, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary btn-lg">Create Match</button>
+            </div>
+        </div>
+
+}
+    </div>
+</body>
+

@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container">
+    <div class="class=" jumbotron"">
+
+        <div class="page-header">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12"> <h4> Score Card (Top 10)</h4></div>
+                <div class="col-lg-4 col-md-4 col-sm-12"> <a href="@Url.Action("Reset", "Leaderboard")">Reset Score Board and  All Matches</a></div>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table cellpadding="2" cellspacing="2" border="1" class="table table-striped table-hover table-bordered">
+                <tr style="background-color:black;color:white">
+
+                    <th>Player</th>
+                    <th>Rank</th>
+                    <th>Score</th>
+                </tr>
+
+
+                @foreach (var playerScore in ViewBag.listAllLeaderboard)
+                {
+                    <tr>
+                        <td>@playerScore.Player</td>
+                        <td>@playerScore.Rank</td>
+                        <td>@playerScore.Score</td>
+                    </tr>
+
+
+                }
+
+
+            </table>
+        </div>
+
+
+        <div class="page-header">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12"> <h4> Match Summary</h4></div>
+                <div class="col-lg-4 col-md-4 col-sm-12"> <a href="@Url.Action("Create","Leaderboard")">Start new Match</a></div>
+            </div>
+        </div>
+
+
+
+        <div class="table-responsive">
+            <table cellpadding="2" cellspacing="2" border="1" class="table table-striped table-hover table-bordered">
+                <tr style="background-color:black;color:white">
+
+                    <th>Player Name</th>
+                    <th>Player Level</th>
+                    <th>Opponent Name</th>
+                    <th>Opponent Level</th>
+                    <th>Status</th>
+                    <th>PotentialPoints</th>
+                    <th>Winner</th>
+                    <th>Update</th>
+                </tr>
+
+                @foreach (var playerMatch in ViewBag.listAllScores)
+                {
+                    <tr>
+
+                        <td>@playerMatch.Player</td>
+                        <td>@playerMatch.Level</td>
+                        <td>@playerMatch.OpponentName</td>
+                        <td>@playerMatch.OpponentLevel</td>
+                        <td>@playerMatch.Status</td>
+                        <td>@playerMatch.PotentialPoints</td>
+                        <td>@playerMatch.Winner</td>
+
+                        <td>
+                            @if (playerMatch.Status != "complete")
+                            {
+                                <a href="@Url.Action("Edit", "Leaderboard", new { id = playerMatch.MatchId })" class="glyphicon glyphicon-user" data-toggle="tooltip" title="Select Winner!"></a>
+                            }
+                        </td>
+
+                    </tr>
+                }
+
+
+
+
+            </table>
+        </div>
+    </div>
+
+
+</div>
