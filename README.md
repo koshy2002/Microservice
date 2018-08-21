@@ -10,21 +10,21 @@ Please note :- Make sure the web api solution is running .Webapi is in ScoreWebA
 
 </br>
 GET : http://localhost:55641/api/leaderboard </br>
-OUTPUT : Return all the Leaderboard</br></br>
+RESPONSE BODY : Return all the Leaderboard</br></br>
 
 GET : http://localhost:55641/api/leaderboard/[:id] </br>
-OUTPUT : Return Leaderboard of particular id </br></br>
+RESPONSE BODY : Return Leaderboard of particular id </br></br>
 
 POST : http://localhost:55641/api/leaderboard/reset</br>
 OUTPUT : Clears data from Leaderboard and Match</br></br>
 
 GET: http://localhost:55641/api/match</br>
-OUTPUT : Return all the match</br></br>
+RESPONSE BODY : Return all the match</br></br>
 
 POST : http://localhost:55641/api/match</br>
 REQUEST BODY :  {player: [player name], level: [level], opponentName:[opponent name] opponentLevel: [opponent level]} </br>
-OUTPUT: Return all the match</br></br>
+RESPONSE BODY: Return all the match</br></br>
 
 PUT : http://localhost:55641/api/match/[:id]</br>
 REQUEST BODY : { "status": "complete",  "winner": [winner name] } </br>
-OUTPUT : updates the winner
+RESPONSE BODY : updates the winner
