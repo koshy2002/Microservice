@@ -34,4 +34,9 @@ RESPONSE BODY : updates the winner  </br> </br>
 <img width="951" alt="2" src="https://user-images.githubusercontent.com/42551395/44413288-446bf200-a528-11e8-8edb-352756b5864c.png">
 </br></br><b> Screen 3 </b> </br>
 <img width="945" alt="3" src="https://user-images.githubusercontent.com/42551395/44413384-75e4bd80-a528-11e8-88e6-d894d5c34638.png">
+</br></br><b> Screen 4 </b> </br>
+<img width="920" alt="6" src="https://user-images.githubusercontent.com/42551395/44414518-38cdfa80-a52b-11e8-8311-f67064d71b9b.png">
+</br></br><b> Screen 5 </b> </br>
+<img width="931" alt="7" src="https://user-images.githubusercontent.com/42551395/44414523-3bc8eb00-a52b-11e8-84dc-8ca6c37824b2.png">
+
 
