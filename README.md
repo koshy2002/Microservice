@@ -1,8 +1,8 @@
 # Microservice
 Microservice  app is created based on the requirement from https://github.com/jwo/microservice-assessment <br/>
 1.Open ScoreWebApi solution inside Microservice folder .</br>
-2.This is the web api solution. Run this first.</br>
-3.Open ScoreClient solution inside Microservice folder.</br>
+2.This is the web api solution written in Asp.Net Core Web Api. Run this first.</br>
+3.Open ScoreClient solution inside Microservice folder. This is written in Asp.Net Core MVC</br>
 4.Run the ScoreClient solution.</br>
 </br> </br>
 
