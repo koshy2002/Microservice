@@ -12,7 +12,7 @@ Please note :- Make sure the web api solution is running .Webapi is in ScoreWebA
 GET : http://localhost:55641/api/leaderboard </br>
 OUTPUT : Return all the Leaderboard</br></br>
 
-GET : http://localhost:55641/api/leaderboard/1 </br>
+GET : http://localhost:55641/api/leaderboard/[:id] </br>
 OUTPUT : Return Leaderboard of particular id </br></br>
 
 POST : http://localhost:55641/api/leaderboard/reset</br>
@@ -24,5 +24,5 @@ OUTPUT : Return all the match</br></br>
 POST : http://localhost:55641/api/match</br>
 OUTPUT: Return all the match</br></br>
 
-PUT : http://localhost:55641/api/match/2</br>
+PUT : http://localhost:55641/api/match/[:id]</br>
 OUTPUT : updates the winner
