@@ -22,7 +22,9 @@ GET: http://localhost:55641/api/match</br>
 OUTPUT : Return all the match</br></br>
 
 POST : http://localhost:55641/api/match</br>
+REQUEST BODY :  {player: [player name], level: [level], opponentName:[opponent name] opponentLevel: [opponent level]} </br>
 OUTPUT: Return all the match</br></br>
 
 PUT : http://localhost:55641/api/match/[:id]</br>
+REQUEST BODY : { "status": "complete",  "winner": [winner name] } </br>
 OUTPUT : updates the winner
