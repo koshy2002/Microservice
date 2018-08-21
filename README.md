@@ -28,8 +28,10 @@ RESPONSE BODY: Return all the match</br></br>
 PUT : http://localhost:55641/api/match/[:id]</br>
 REQUEST BODY : { "status": "complete",  "winner": [winner name] } </br>
 RESPONSE BODY : updates the winner  </br> </br>
-
+<b> Screen 1 </b> </br>
 <img width="950" alt="1" src="https://user-images.githubusercontent.com/42551395/44413187-f1923a80-a527-11e8-8d87-0c5537631937.png"> 
-</br>
+</br><b> Screen 2 </b> </br>
 <img width="951" alt="2" src="https://user-images.githubusercontent.com/42551395/44413288-446bf200-a528-11e8-8edb-352756b5864c.png">
+</br></br><b> Screen 3 </b> </br>
+<img width="945" alt="3" src="https://user-images.githubusercontent.com/42551395/44413384-75e4bd80-a528-11e8-88e6-d894d5c34638.png">
 
